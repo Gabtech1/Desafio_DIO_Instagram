@@ -25,6 +25,29 @@ body {
     height: 100vh;
 }
 
+.demo {
+    position: absolute;
+    opacity: 0;
+    animation-name: passagem;
+    animation-duration: 35s;
+    animation-iteration-count: infinite;
+}
+
+.demo:nth-child(1) {
+    animation-delay: 7s;
+}
+
+.demo:nth-child(2) {
+    animation-delay: 14s;
+}
+
+.demo:nth-child(3) {
+    animation-delay: 21s;
+}
+.demo:nth-child(3) {
+    animation-delay: 28s;
+}
+
 .insta-phone {
     display: flex;
     align-items: center;
@@ -156,5 +179,17 @@ body {
     
     .group {
         border: 1px solid transparent;
+    }
+}
+
+@keyframes passagem {
+    
+    25% {
+        opacity: 1;
+        transform: scale(1.1, 1.1);
+    }
+
+    50% {
+        opacity: 0;
     }
 }
